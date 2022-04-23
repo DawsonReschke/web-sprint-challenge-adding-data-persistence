@@ -20,8 +20,8 @@ You are not allowed to collaborate during the sprint challenge.
 In this project you will be given a set of requirements and must design a database to satisfy them. As a part of this process you'll also build an API with endpoints to access the data.
 
 ### Files to Complete
+  }
 
-1. `package.json`
 2. `index.js`
 3. `api/server.js`
 4. `model.js` inside `api/project`, `api/resource` and `api/task`
@@ -111,6 +111,10 @@ Build an API inside the `api` folder with endpoints for:
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain the difference between Relational Databases and SQL.
+ - relational databases are databases with predetermined schemas, that stores data in a table structure
 2. Why do tables need a Primary Key?
+ - Tables need a primary key to retain the high efficiency for queries. The primary key is the key that the db can reference in constant time. 
 3. What is the name given to a table column that references the Primary Key on another table?
+ - A  foreign key is what is used to reference an id from a separate table. 
 4. What do we need in order to have a _many to many_ relationship between two tables?
+ - In order to have a many to many relationship there must be a junction table responsible for storing those relationships
