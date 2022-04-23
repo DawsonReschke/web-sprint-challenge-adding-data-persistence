@@ -11,7 +11,6 @@ router.get('/projects', async (req,res) => {
     }))
 })
 
-
 router.post('/projects',projectMiddlewares.validateProjectRequestBody, async (req,res) => {
    const project_id = (await projectModel.insert(req.body))[0]
    res.json({...req.body,project_completed:!!req.body.project_completed, project_id})
